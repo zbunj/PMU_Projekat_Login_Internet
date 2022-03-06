@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjekatLogin.MainPage"
+             BackgroundColor="#B3D7D7">
+
+    <StackLayout>
+        <Button Text="Sign In" Clicked="NavigateSignIn" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" FontSize="Large" BackgroundColor="#2EB2B2" BorderColor="#174545" TextColor="White" BorderWidth="3" HeightRequest="100" WidthRequest="150" FontFamily="CustomFont" CornerRadius="10"/>
+        <Label  Text="" x:Name="labela1" FontSize="20" TextColor="#174545" HorizontalOptions="Center" VerticalOptions="Fill" FontFamily="CustomFont"/>
+    </StackLayout>
+
+</ContentPage>

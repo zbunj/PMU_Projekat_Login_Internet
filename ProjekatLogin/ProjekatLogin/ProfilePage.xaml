@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="clr-namespace:ProjekatLogin;assembly=ProjekatLogin"
+             x:DataType="d:ProfilePage"
+             x:Class="ProjekatLogin.ProfilePage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#174545">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Profile Data"
+                   BackgroundColor="#256464"
+                   Padding="6"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="#B3D7D7"
+                   FontSize="25"
+                   FontFamily="CustomFont"
+                   FontAttributes="Bold"
+                   Margin="5"/>
+            <Grid HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <BoxView Color="#256464" Grid.Row="0" Grid.ColumnSpan="4" Margin="5"/>
+                <BoxView Color="#256464" Grid.Row="1" Grid.ColumnSpan="4" Margin="5"/>
+                <BoxView Color="#256464" Grid.Row="2" Grid.ColumnSpan="4" Margin="5"/>
+                <BoxView Color="#256464" Grid.Row="3" Grid.ColumnSpan="4" Margin="5"/>
+
+                <Label Text="Username:"
+                   Margin="10"
+                   TextColor="#B3D7D7"
+                   FontSize="22"
+                   FontFamily="CustomFont"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+                <Label Text="{Binding SessionData.user.username}"
+                   Margin="10"
+                   TextColor="#B3D7D7"
+                   FontSize="22"
+                   FontFamily="CustomFont"
+                   HorizontalOptions="CenterAndExpand"
+                   Grid.Row="0"
+                   Grid.Column="3"/>
+                <Label Text="Ime:"
+                   Margin="10"
+                   TextColor="#B3D7D7"
+                   FontSize="22"
+                   FontFamily="CustomFont"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+                <Label Text="{Binding SessionData.user.name}"
+                   Margin="10"
+                   TextColor="#B3D7D7"
+                   FontSize="22"
+                   FontFamily="CustomFont"
+                   HorizontalOptions="CenterAndExpand"
+                   Grid.Row="1"
+                   Grid.Column="3"/>
+                <Label Text="Prezime:"
+                   Margin="10"
+                   TextColor="#B3D7D7"
+                   FontSize="22"
+                   FontFamily="CustomFont"
+                   Grid.Row="2"
+                   Grid.Column="0"/>
+                <Label Text="{Binding SessionData.user.surname}"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="10"
+                   TextColor="#B3D7D7"
+                   FontSize="22"
+                   FontFamily="CustomFont"
+                   Grid.Row="2"
+                   Grid.Column="3"/>
+                <Label Text="Email:"
+                   Margin="10"
+                   TextColor="#B3D7D7"
+                   FontSize="22"
+                   FontFamily="CustomFont"
+                   Grid.Row="3"
+                   Grid.Column="0"/>
+                <Label Text="{Binding SessionData.user.email}"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="10"
+                   TextColor="#B3D7D7"
+                   FontSize="22"
+                   FontFamily="CustomFont"
+                   Grid.Row="3"
+                   Grid.Column="3"/>
+            </Grid>
+            
+            <Image Source="{Binding SessionData.user.picture}"
+                   Margin="10"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   BackgroundColor="#B3D7D7"/>
+            <Button Clicked="CloseApp"
+                   Text="Exit"
+                   VerticalOptions="EndAndExpand"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   BackgroundColor="#2EB2B2"
+                   BorderColor="#B3D7D7"
+                   TextColor="#B3D7D7"
+                   BorderWidth="3"
+                   WidthRequest="150"
+                   FontFamily="CustomFont"
+                   CornerRadius="7"
+                   Margin="5"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

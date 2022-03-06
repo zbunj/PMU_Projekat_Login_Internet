@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjekatLogin.SignInPage"
+             BackgroundColor="#B3D7D7">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Dobrodosli"
+                   FontAttributes="Bold"
+                   FontSize="30"
+                   FontFamily="CustomFont"
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="#174545"
+                   VerticalOptions="CenterAndExpand"/>
+            <Label Text="Ulogujte se sa vasim nalogom"
+                HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   FontSize="20"
+                   FontFamily="CustomFont"
+                   TextColor="#174545"/>
+            <Entry x:Name="txtUsername"
+                   Placeholder="Username"
+                   VerticalOptions="CenterAndExpand"
+                   PlaceholderColor="White"
+                   TextColor="#174545"
+                   FontFamily="CustomFont"/>
+            <Entry x:Name="txtPassword"
+                   Placeholder="Password"
+                   VerticalOptions="Center"
+                   PlaceholderColor="White"
+                   TextColor="#174545"
+                   FontFamily="CustomFont"/>
+            <Button Clicked="HandleSignIn"
+                    Text="Sign In"
+                    VerticalOptions="CenterAndExpand"
+                    FontSize="Large" BackgroundColor="#2EB2B2"
+                    BorderColor="#174545" TextColor="White"
+                    BorderWidth="3"
+                    FontFamily="CustomFont"
+                    CornerRadius="7"
+                    Margin="5"/>
+            <Label x:Name="lblInfo" 
+                   TextColor="#174545"
+                   FontFamily="CustomFont"
+                   FontSize="15"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
