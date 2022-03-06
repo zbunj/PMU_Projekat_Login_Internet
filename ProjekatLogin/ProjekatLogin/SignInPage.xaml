@@ -25,6 +25,7 @@
                    TextColor="#174545"
                    FontFamily="CustomFont"/>
             <Entry x:Name="txtPassword"
+                   IsPassword="True"
                    Placeholder="Password"
                    VerticalOptions="Center"
                    PlaceholderColor="White"

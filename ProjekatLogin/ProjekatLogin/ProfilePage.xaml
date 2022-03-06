@@ -28,7 +28,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
                 <BoxView Color="#256464" Grid.Row="0" Grid.ColumnSpan="4" Margin="5"/>
@@ -39,14 +39,15 @@
                 <Label Text="Username:"
                    Margin="10"
                    TextColor="#B3D7D7"
-                   FontSize="22"
+                   FontSize="16"
                    FontFamily="CustomFont"
                    Grid.Row="0"
                    Grid.Column="0"/>
                 <Label Text="{Binding SessionData.user.username}"
                    Margin="10"
+                   HorizontalTextAlignment="Center"
                    TextColor="#B3D7D7"
-                   FontSize="22"
+                   FontSize="16"
                    FontFamily="CustomFont"
                    HorizontalOptions="CenterAndExpand"
                    Grid.Row="0"
@@ -54,14 +55,15 @@
                 <Label Text="Ime:"
                    Margin="10"
                    TextColor="#B3D7D7"
-                   FontSize="22"
+                   FontSize="16"
                    FontFamily="CustomFont"
                    Grid.Row="1"
                    Grid.Column="0"/>
                 <Label Text="{Binding SessionData.user.name}"
                    Margin="10"
+                   HorizontalTextAlignment="Center"
                    TextColor="#B3D7D7"
-                   FontSize="22"
+                   FontSize="16"
                    FontFamily="CustomFont"
                    HorizontalOptions="CenterAndExpand"
                    Grid.Row="1"
@@ -69,30 +71,32 @@
                 <Label Text="Prezime:"
                    Margin="10"
                    TextColor="#B3D7D7"
-                   FontSize="22"
+                   FontSize="16"
                    FontFamily="CustomFont"
                    Grid.Row="2"
                    Grid.Column="0"/>
                 <Label Text="{Binding SessionData.user.surname}"
                    HorizontalOptions="CenterAndExpand"
                    Margin="10"
+                   HorizontalTextAlignment="Center"
                    TextColor="#B3D7D7"
-                   FontSize="22"
+                   FontSize="16"
                    FontFamily="CustomFont"
                    Grid.Row="2"
                    Grid.Column="3"/>
                 <Label Text="Email:"
                    Margin="10"
                    TextColor="#B3D7D7"
-                   FontSize="22"
+                   FontSize="16"
                    FontFamily="CustomFont"
                    Grid.Row="3"
                    Grid.Column="0"/>
                 <Label Text="{Binding SessionData.user.email}"
                    HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
                    Margin="10"
                    TextColor="#B3D7D7"
-                   FontSize="22"
+                   FontSize="16"
                    FontFamily="CustomFont"
                    Grid.Row="3"
                    Grid.Column="3"/>
